@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <h2 class="titre">To DO LisT</h2>
+                </div>
+                <div class="form">
+                <form action="" method="post">
+                        <input class="form-control tach" type="text" value="" id="task" name="task" placeholder="Mettre une tâche ...">
+                        <input class="form-control valid btn btn-dark" type="button" value="Inserer" id="valid" onclick="addTask()">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <table class="table table-bordered" id="tab">
+                <tr>
+                    <th>#</th>
+                    <th>TO DO</th>
+                    <th>Date</th>
+                    <th>Report</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Faire un cours MEAN</td>
+                    <td>Aujourd'hui</td>
+                    <td><input type="button" value="Do" onclick="remove()" class="btn btn-success"> &nbsp; <input type="button" value="Update" onclick="update()" class="btn btn-warning"></td>
+                </tr>
+            </table>
+            <div class="format-table">
+                <button onclick="reset()" class="btn btn-danger"> Réinitialiser </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/todo.js"></script>
+</body>
+</html>
